@@ -46,6 +46,6 @@ public class UserControllerTest {
         ResponseEntity<User> response = userController.createUser(user);
 
         assertEquals(HttpStatus.OK, response.getStatusCode());
-        assertEquals(2L, response.getBody().getId());
+        assertEquals("2L", response.getBody().getId());
     }
 }
