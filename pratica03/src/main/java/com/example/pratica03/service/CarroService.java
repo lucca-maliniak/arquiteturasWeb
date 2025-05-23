@@ -20,7 +20,7 @@ public class CarroService {
     }
 
     public Carro criar(@Valid Carro carro) {
-        carro.setDataCriacao(java.time.LocalDateTime.now());
+        carro.setDataCompra(java.time.LocalDateTime.now());
         return carroRepository.save(carro);
     }
 
@@ -30,9 +30,8 @@ public class CarroService {
             throw new RuntimeException("Carro não encontrado!");
         }
         Carro carro = carroOptional.get();
-        carro.setTitulo(carroAtualizada.getTitulo());
-        carro.setDescricao(carroAtualizada.getDescricao());
-        carro.setStatus(carroAtualizada.getStatus());
+        carro.setModelo(carroAtualizado.getModelo());
+        carro.setDescricao(carroAtualizado.getDescricao());
         return carroRepository.save(carro);
     }
 

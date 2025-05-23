@@ -29,7 +29,7 @@ public class CarroController {
 
     @PutMapping("/{id}")
     public Carro atualizar(@PathVariable Long id, @Valid @RequestBody Carro carro) {
-        return carroService.atualizar(id, tarefa);
+        return carroService.atualizar(id, carro);
     }
 
     @DeleteMapping("/{id}")

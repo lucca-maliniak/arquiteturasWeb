@@ -15,6 +15,7 @@ public class Carro {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) 
+    private Long id;
 
     @NotNull
     @Size(min = 3, max = 100)
