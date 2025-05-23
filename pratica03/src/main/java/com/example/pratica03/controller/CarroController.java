@@ -1,7 +1,7 @@
 package com.example.pratica03.controller;
 
-import com.example.tarefas.model.Carro;
-import com.example.tarefas.service.CarroService;
+import com.example.pratica03.model.Carro;
+import com.example.pratica03.service.CarroService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

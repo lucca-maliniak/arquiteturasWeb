@@ -1,7 +1,7 @@
 package com.example.pratica03.service;
 
-import com.example.carros.model.Carro;
-import com.example.carros.repository.CarroRepository;
+import com.example.pratica03.model.Carro;
+import com.example.pratica03.repository.CarroRepository;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
