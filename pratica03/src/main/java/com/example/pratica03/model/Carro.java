@@ -1,4 +1,4 @@
-package com.example.tarefas.model;
+package com.example.pratica03.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
@@ -10,22 +10,18 @@ import java.time.LocalDateTime;
 
 @Data
 @Entity
-@Document(collection = "tarefas")
-public class Tarefa {
+@Document(collection = "carro")
+public class Carro {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY) 
 
     @NotNull
     @Size(min = 3, max = 100)
-    private String titulo;
+    private String modelo;
 
     @Size(max = 500)
     private String descricao;
 
-    @NotNull
-    private String status;
-
-    private LocalDateTime dataCriacao;
+    private LocalDateTime dataCompra;
 }
